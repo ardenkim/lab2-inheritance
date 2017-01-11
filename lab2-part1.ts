@@ -7,13 +7,13 @@ class CheckingsAccount {
         this.balance = initialBalance;
     }
 
-    public deposit(amount:number):void {
+    deposit(amount:number):void {
         this.balance += amount;
     }
-    public withdraw(amount:number):void {
+    withdraw(amount:number):void {
         this.balance -= amount;
     }
-    public checkBalance():void {
+    checkBalance():void {
         console.log('current owner\'s name: ${this.ownerName}');
         console.log('current balance: $${this.balance}');
     }

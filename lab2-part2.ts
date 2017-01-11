@@ -9,18 +9,18 @@ class SavingsAccount {
         this.withdrawal = 0;
     }
 
-    public deposit(amount:number):void {
+    deposit(amount:number):void {
         this.balance += amount;
     }
-    public withdraw(amount:number):void {
+    withdraw(amount:number):void {
         if (this.withdrawal < 3) {
             this.balance -= amount;
-            this.withdrawal++;
         } else {
             console.log('Error: Withdrawal limit exceeded');
         }
+        this.withdrawal++;
     }
-    public checkBalance():void {
+    checkBalance():void {
         console.log('current owner\'s name: ${this.ownerName}');
         console.log('current balance: $${this.balance}');
     }
